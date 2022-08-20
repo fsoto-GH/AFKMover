@@ -23,8 +23,8 @@ class AFKMover:
             print(f'Stopping at {self.parser.args[STOP_TIME_CODE]:{DF_TIME_FORMAT}}.')
 
         if SHUTDOWN_DELAY_CODE in self.parser.args:
-            print(
-                f'Shutting down computer {self.parser.args[SHUTDOWN_DELAY_CODE]} seconds after {self.parser.args[STOP_TIME_CODE]:{DF_TIME_FORMAT}}.')
+            print(f'Shutting down computer {self.parser.args[SHUTDOWN_DELAY_CODE]} seconds after'
+                  f' {self.parser.args[STOP_TIME_CODE]:{DF_TIME_FORMAT}}.')
 
         last_triggered = datetime.now()
         while True:
