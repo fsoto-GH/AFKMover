@@ -15,7 +15,7 @@ def try_parse_time(s, format, var_name) -> datetime:
         temp = datetime.strptime(s, format)
         return datetime(year=today.year, month=today.month, day=today.day, hour=temp.hour, minute=temp.minute,
                         second=temp.second)
-    except  ValueError:
+    except ValueError:
         print(f'"{var_name}" needs to be a valid time')
 
 
