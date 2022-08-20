@@ -9,7 +9,7 @@ Little tool to keep your computer from sleeping (in a human-like manner). Allows
 If you have pip, you can run <code>pip install -r requirements.txt</code>.</p>
 
 <p>You can execute the app using the following command: 
-<code>py move_k.py [[st=sleep_time] [tm=hh:mm:ss[AM|PM]] [sd=seconds]]</code></p>
+<code>py move_k.py [[st=sleep_time] [tm=hh:mm:ss{AM|PM}] [sd=seconds]]</code></p>
 <ul>
     <li><code>st</code> - the interval between key presses in seconds</li>
     <ul>
