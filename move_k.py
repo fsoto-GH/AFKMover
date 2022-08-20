@@ -19,5 +19,5 @@ if __name__ == '__main__':
         except (ValueError, KeyError) as ex:
             print(ex)
     else:
-        print(
-            f"""py move_k.py [[{SLEEP_TIME_CODE}=sleep_time] [{STOP_TIME_CODE}=hh:mm:ss[AM|PM]] [{SHUTDOWN_DELAY_CODE}=seconds ]]""")
+        print(f"py move_k.py [[{SLEEP_TIME_CODE}=sleep_time] [{STOP_TIME_CODE}=hh:mm:ss[AM|PM]]"
+              f" [{SHUTDOWN_DELAY_CODE}=seconds]]")
