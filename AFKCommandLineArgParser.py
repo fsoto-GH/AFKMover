@@ -1,6 +1,5 @@
 from utils import try_parse_int, try_parse_time
 
-
 DF_SLEEP_TIME = 3
 DF_TIME_FORMAT = '%I:%M:%S%p'
 
@@ -17,7 +16,6 @@ VAR_NAMES = {
 DF_ARGS = {
     SLEEP_TIME_CODE: DF_SLEEP_TIME
 }
-
 
 INVALID_SLEEP_TIME = 'Interval between key presses must be a positive integer.'
 MISSING_SHUTDOWN_FOR_DELAY = 'A stop time must be specified when a shutdown time is specified.'
