@@ -1,16 +1,3 @@
-<style style="display: none;">
-    #cla li:last-child {
-        margin-bottom: 0.5em;    
-    }
-
-    #examples {
-        list-style: none;
-    }
-
-    #examples li {
-        margin-bottom: 0.3em;
-    }
-</style>
 <h1>AFKMover</h1>
 Little tool to keep your computer from sleeping (in a human-like manner). Allows you to specify a stop time and ability to shut down. 
 
