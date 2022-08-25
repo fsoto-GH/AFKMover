@@ -1,4 +1,4 @@
-<style>
+<style style="display: none;">
     #cla li:last-child {
         margin-bottom: 0.5em;    
     }
