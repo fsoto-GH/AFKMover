@@ -41,6 +41,7 @@ If you have pip, you can run <code>pip install -r requirements.txt</code>.</p>
 <h3>Example</h3>
 <ul id="examples">
     <li><code>py move_k.py</code> - run for an undefined amount of time, key-pressing at the default sleep time interval.</li>
+    <li><code>py move_k.py kp=space</code> - run for an undefined amount of time, pressing the space key at the default sleep time interval.</li>
     <li><code>py move_k.py st=10</code> - run for an undefined amount of time key-pressing every 10 seconds.</li>
     <li><code>py move_k.py tm=10:00:00AM</code> - run until 10:00:00AM system time then exit program with default sleep time.</li>
     <li><code>py move_k.py tm=10:00:00AM sd=10</code> - run until 10:00:00AM system time and shutdown 10 seconds after, using default sleep time.</li>
