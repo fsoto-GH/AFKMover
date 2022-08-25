@@ -2,7 +2,7 @@ import sys
 
 from AFKMover import AFKMover
 from AFKCommandLineArgParser import AFKCommandLineArgParser
-from AFKCommandLineArgParser import SLEEP_TIME_CODE, STOP_TIME_CODE, SHUTDOWN_DELAY_CODE
+from AFKCommandLineArgParser import SLEEP_TIME_CODE, STOP_TIME_CODE, SHUTDOWN_DELAY_CODE, KEY_TO_PRESS_CODE
 
 HELP_KEYWORDS = ('--help', '--h', 'help')
 
@@ -20,4 +20,4 @@ if __name__ == '__main__':
             print(ex)
     else:
         print(f"py move_k.py [[{SLEEP_TIME_CODE}=sleep_time] [{STOP_TIME_CODE}=hh:mm:ss{{AM|PM}}]]"
-              f" [{SHUTDOWN_DELAY_CODE}=seconds]]")
+              f" [{SHUTDOWN_DELAY_CODE}=seconds] [kp={KEY_TO_PRESS_CODE}]]")

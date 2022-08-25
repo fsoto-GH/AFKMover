@@ -1,12 +1,10 @@
 import winsound
-import pyautogui
 from datetime import datetime
 
-from utils import shutdown
+from utils import shutdown, key_press
 from AFKCommandLineArgParser import AFKCommandLineArgParser
-from AFKCommandLineArgParser import STOP_TIME_CODE, SLEEP_TIME_CODE, SHUTDOWN_DELAY_CODE, DF_TIME_FORMAT
-
-DF_KEY_TO_PRESS = 'win'
+from AFKCommandLineArgParser import STOP_TIME_CODE, SLEEP_TIME_CODE, SHUTDOWN_DELAY_CODE, KEY_TO_PRESS_CODE
+from AFKCommandLineArgParser import DF_TIME_FORMAT
 
 INVALID_AFK_CL_ARGS = 'One or more arguments were invalid. Please review the errors above.'
 
@@ -33,16 +31,10 @@ class AFKMover:
                 break
 
             if (datetime.now() - last_triggered).seconds > self.parser.args[SLEEP_TIME_CODE]:
-                self.keyPress()
+                key_press(self.parser.args[KEY_TO_PRESS_CODE])
                 last_triggered = datetime.now()
 
         if SHUTDOWN_DELAY_CODE in self.parser.args:
             shutdown(self.parser.args[SHUTDOWN_DELAY_CODE], 1000, 350)
         else:
             winsound.Beep(1000, 1000)
-
-    def keyPress(self):
-        if DF_KEY_TO_PRESS not in pyautogui.KEY_NAMES:
-            raise ValueError(f'Invalid default key: {DF_KEY_TO_PRESS}.')
-        pyautogui.keyDown(DF_KEY_TO_PRESS)
-        pyautogui.keyUp(DF_KEY_TO_PRESS)
