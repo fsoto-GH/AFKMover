@@ -1,4 +1,7 @@
-import subprocess, winsound
+import pyautogui
+import winsound
+import subprocess
+
 from datetime import datetime
 
 
@@ -27,3 +30,10 @@ def shutdown(shutdown_delay, freq, duration):
 
     print(f'Shutting down in {shutdown_delay} seconds...')
     subprocess.call(['shutdown', '-s', '-t', f"{shutdown_delay}"])
+
+
+def key_press(key):
+    if key not in pyautogui.KEY_NAMES:
+        raise ValueError(f'Invalid default key: {key}.')
+    pyautogui.keyDown(key)
+    pyautogui.keyUp(key)
