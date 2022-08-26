@@ -12,10 +12,10 @@ def try_parse_int(s, var_name):
         print(f'"{var_name}" needs to be a numeric value')
 
 
-def try_parse_time(s, format, var_name) -> datetime:
+def try_parse_time(s, time_format, var_name) -> datetime:
     try:
         today = datetime.today()
-        temp = datetime.strptime(s, format)
+        temp = datetime.strptime(s, time_format)
         return datetime(year=today.year, month=today.month, day=today.day, hour=temp.hour, minute=temp.minute,
                         second=temp.second)
     except ValueError:
