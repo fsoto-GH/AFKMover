@@ -19,7 +19,8 @@ VAR_NAMES = {
 }
 
 DF_ARGS = {
-    SLEEP_TIME_CODE: DF_SLEEP_TIME
+    SLEEP_TIME_CODE: DF_SLEEP_TIME,
+    KEY_TO_PRESS_CODE: DF_KEY_TO_PRESS
 }
 
 INVALID_SLEEP_TIME = 'Interval between key presses must be a positive integer.'
