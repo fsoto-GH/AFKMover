@@ -2,7 +2,7 @@
 Little tool to keep your computer from sleeping (in a human-like manner). Allows you to specify a stop time and ability to shut down. 
 
 <h2>Requirements</h2>
-<p>It is highly advised to have PIP installed, but you can definitely install the required package(s) manually.</p>
+<p>You will need Python 3.8+. It is highly advised to have PIP installed, but you can definitely install the required package(s) manually.</p>
 
 <h2>How to Run</h2>
 <p>Ensure you have the required packages found in the <code>requirements.txt</code>. 
