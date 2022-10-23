@@ -20,4 +20,4 @@ if __name__ == '__main__':
             print(ex)
     else:
         print(f"py move_k.py [[{SLEEP_TIME_CODE}=sleep_time] [{STOP_TIME_CODE}=hh:mm:ss{{AM|PM}}]]"
-              f" [{SHUTDOWN_DELAY_CODE}=seconds] [kp={KEY_TO_PRESS_CODE}]]")
+              f" [{SHUTDOWN_DELAY_CODE}=seconds] [{KEY_TO_PRESS_CODE}=key_to_press]]")
